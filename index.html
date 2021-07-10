@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <fieldset>
+        <legend> <h2>Inscription</h2></legend>  
+        <form name ="formulaire"   action="#"  onsubmit="return fenvoi()">
+  <div class="container">
+    
+     <div class="label">
+         <label for="">Prénom et Nom * :</label>
+     
+         <input type="text" name="name" id="name" >
+
+     </div>
+     <div class="label">
+         <label for="">CIN * :</label>
+     
+         <input type="text" name="CIN" id="CIN" maxlength="8" minlength="8" >
+        
+     </div>
+       <div class="label">
+           <label for="">Adresse mail * :</label>
+      
+         <input type="email" name="mail" id="mail" >
+     </div>
+       <div class="label">
+          <label for="">Niveau scolaire:</label>
+       
+          <input type="radio" requierd name="title" id="r" value="" ><label for="r1" >Secondaire</label>
+          <input type="radio" requierd name="title" id="r" value=""><label for="r2"> Universitaire</label>
+         <input type="radio" requierd name="title" id="r" value=""><label for="r3">Autre</label>
+      </div>
+      <div class="label">
+       
+          <label for="">Modules de formation:</label>
+       
+          <select multiple id="mod"> 
+             <option value="">HTML5</option>
+             <option value="">CSS3</option>
+             <option value="">Javascript</option> 
+             <option value="">JQuery</option> 
+
+           </select> 
+        
+      </div>
+     <p>(*) Champs obligatoires</p> 
+     <div>
+        <button type="submit" onclick="return verif()">Envoyer</button>
+        <button type="submit" onclick="submit">Annuler</button>
+    </div>
+
+  </div>
+</form>
+</fieldset>
+    
+        
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+body{
+    background-color: darkgoldenrod;
+   font-size: large;
+   display: grid;
+   align-items: center;
+   grid-template-columns: auto auto
+
+  
+}
+
+   
+.label{
+    margin-left: 20px;
+    margin: 10px;
+
+}
+.container{
+    display: grid;
+    justify-content: space-between;
+}
+#CIN{
+    margin-left: 85px;
+  width: 80px;
+}
+#mail{
+    margin-left: 20px;
+}
+
+select multiple{
+    margin-top: 80px;
+}
+fieldset{
+    border-radius: 20px;
+    
+}
+
